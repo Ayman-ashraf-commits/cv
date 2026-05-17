@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script>
+        // Anti-flash Theme Initialization (Light Mode by Default)
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Anti-flash Language & Direction Initialization (English by Default)
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ayman Ashraf — Content Lead &amp; Video Model</title>
+    <link rel="icon" type="image/jpeg" href="f4f9afc1-8e37-4f60-b95f-061ac6198958.jpg" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Geist+Mono:wght@400;700&amp;family=Inter:wght@400;500;600&amp;family=Cairo:wght@400;600;700;800&amp;family=Caveat&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "var(--on-tertiary-container)",
+                        "primary": "var(--primary)",
+                        "surface-container-high": "var(--surface-container-high)",
+                        "tertiary-fixed": "var(--tertiary-fixed)",
+                        "on-tertiary-fixed-variant": "var(--on-tertiary-fixed-variant)",
+                        "tertiary-container": "var(--tertiary-container)",
+                        "inverse-primary": "var(--inverse-primary)",
+                        "tertiary-fixed-dim": "var(--tertiary-fixed-dim)",
+                        "on-background": "var(--on-background)",
+                        "primary-fixed-dim": "var(--primary-fixed-dim)",
+                        "on-secondary-container": "var(--on-secondary-container)",
+                        "error": "var(--error)",
+                        "on-secondary-fixed": "var(--on-secondary-fixed)",
+                        "on-secondary-fixed-variant": "var(--on-secondary-fixed-variant)",
+                        "surface-container-lowest": "var(--surface-container-lowest)",
+                        "secondary-fixed-dim": "var(--secondary-fixed-dim)",
+                        "surface-container-highest": "var(--surface-container-highest)",
+                        "on-primary-fixed-variant": "var(--on-primary-fixed-variant)",
+                        "error-container": "var(--error-container)",
+                        "primary-fixed": "var(--primary-fixed)",
+                        "tertiary": "var(--tertiary)",
+                        "inverse-surface": "var(--inverse-surface)",
+                        "on-primary": "var(--on-primary)",
+                        "secondary": "var(--secondary)",
+                        "secondary-fixed": "var(--secondary-fixed)",
+                        "outline": "var(--outline)",
+                        "primary-container": "var(--primary-container)",
+                        "on-surface-variant": "var(--on-surface-variant)",
+                        "surface-dim": "var(--surface-dim)",
+                        "on-tertiary-fixed": "var(--on-tertiary-fixed)",
+                        "background": "var(--background)",
+                        "on-surface": "var(--on-surface)",
+                        "inverse-on-surface": "var(--inverse-on-surface)",
+                        "outline-variant": "var(--outline-variant)",
+                        "on-secondary": "var(--on-secondary)",
+                        "on-tertiary": "var(--on-tertiary)",
+                        "on-error-container": "var(--on-error-container)",
+                        "on-primary-container": "var(--on-primary-container)",
+                        "surface-bright": "var(--surface-bright)",
+                        "secondary-container": "var(--secondary-container)",
+                        "surface-tint": "var(--surface-tint)",
+                        "surface-container": "var(--surface-container)",
+                        "surface": "var(--surface)",
+                        "surface-variant": "var(--surface-variant)",
+                        "on-error": "var(--on-error)",
+                        "surface-container-low": "var(--surface-container-low)",
+                        "on-primary-fixed": "var(--on-primary-fixed)",
+                        "accent-rust": "var(--accent-rust)"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1100px",
+                        "section-gap": "8rem",
+                        "card-padding": "2rem",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "display-xl-mobile": ["Bricolage Grotesque"],
+                        "code-sm": ["Geist Mono"],
+                        "headline-lg": ["Bricolage Grotesque"],
+                        "annotation": ["Caveat"],
+                        "body-md": ["Inter"],
+                        "display-xl": ["Bricolage Grotesque"]
+                    },
+                    "fontSize": {
+                        "display-xl-mobile": ["48px", { "lineHeight": "52px", "fontWeight": "800" }],
+                        "code-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "annotation": ["20px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["84px", { "lineHeight": "90px", "fontWeight": "800" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        :root {
+            --body-bg: #f9f9fb;
+            --background: #ffffff;
+            --on-background: #1a1a1a;
+            --primary: #1a1a1a;
+            --on-primary: #ffffff;
+            --on-surface: #1a1a1a;
+            --on-surface-variant: #5c5c5e;
+            --on-tertiary-container: #8c8c8e;
+
+            --surface: #ffffff;
+            --surface-dim: #f3f3f6;
+            --surface-bright: #ffffff;
+            --surface-variant: #e4e4e7;
+            --surface-container-lowest: #ffffff;
+            --surface-container-low: #f4f4f7;
+            --surface-container: #ededf0;
+            --surface-container-high: #e4e4e7;
+            --surface-container-highest: #d4d4d8;
+
+            --outline: #a1a1aa;
+            --outline-variant: #e4e4e7;
+            --accent-rust: #b8433a;
+
+            --radial-cursor-color: rgba(184, 67, 58, 0.04);
+            --card-border-color: rgba(0, 0, 0, 0.12);
+            --card-bg: #ffffff;
+            --card-hover-border-color: rgba(0, 0, 0, 0.25);
+            --card-hover-bg: #f5f5f7;
+
+            --tertiary-fixed: #e5e2e1;
+            --on-tertiary-fixed-variant: #474746;
+            --tertiary-container: #e5e2e1;
+            --inverse-primary: #5d5f5f;
+            --tertiary-fixed-dim: #c8c6c5;
+            --primary-fixed-dim: #c6c6c7;
+            --on-secondary-container: #ff9a8e;
+            --error: #ffb4ab;
+            --on-secondary-fixed: #410002;
+            --on-secondary-fixed-variant: #871f1b;
+            --secondary-fixed-dim: #ffb4ab;
+            --on-primary-fixed-variant: #454747;
+            --error-container: #93000a;
+            --primary-fixed: #e2e2e2;
+            --tertiary: #ffffff;
+            --inverse-surface: #e5e2e1;
+            --secondary: #ffb4ab;
+            --secondary-fixed: #ffdad6;
+            --primary-container: #e2e2e2;
+            --on-tertiary-fixed: #1c1b1b;
+            --inverse-on-surface: #313030;
+            --on-secondary: #670507;
+            --on-tertiary: #313030;
+            --on-error-container: #ffdad6;
+            --on-primary-container: #636565;
+            --secondary-container: #871f1b;
+            --surface-tint: #c6c6c7;
+            --on-error: #690005;
+            --on-primary-fixed: #1a1c1c;
+        }
+
+        .dark {
+            --body-bg: #0a0a0a;
+            --background: #131313;
+            --on-background: #e5e2e1;
+            --primary: #ffffff;
+            --on-primary: #2f3131;
+            --on-surface: #e5e2e1;
+            --on-surface-variant: #c4c7c8;
+            --on-tertiary-container: #656464;
+
+            --surface: #131313;
+            --surface-dim: #131313;
+            --surface-bright: #3a3939;
+            --surface-variant: #353534;
+            --surface-container-lowest: #0e0e0e;
+            --surface-container-low: #1c1b1b;
+            --surface-container: #201f1f;
+            --surface-container-high: #2a2a2a;
+            --surface-container-highest: #353534;
+
+            --outline: #8e9192;
+            --outline-variant: #444748;
+            --accent-rust: #b8433a;
+
+            --radial-cursor-color: rgba(255, 255, 255, 0.06);
+            --card-border-color: rgba(255, 255, 255, 0.15);
+            --card-bg: transparent;
+            --card-hover-border-color: rgba(255, 255, 255, 0.3);
+            --card-hover-bg: #1a1a1a;
+
+            --tertiary-fixed: #e5e2e1;
+            --on-tertiary-fixed-variant: #474746;
+            --tertiary-container: #e5e2e1;
+            --inverse-primary: #5d5f5f;
+            --tertiary-fixed-dim: #c8c6c5;
+            --primary-fixed-dim: #c6c6c7;
+            --on-secondary-container: #ff9a8e;
+            --error: #ffb4ab;
+            --on-secondary-fixed: #410002;
+            --on-secondary-fixed-variant: #871f1b;
+            --secondary-fixed-dim: #ffb4ab;
+            --on-primary-fixed-variant: #454747;
+            --error-container: #93000a;
+            --primary-fixed: #e2e2e2;
+            --tertiary: #ffffff;
+            --inverse-surface: #e5e2e1;
+            --secondary: #ffb4ab;
+            --secondary-fixed: #ffdad6;
+            --primary-container: #e2e2e2;
+            --on-tertiary-fixed: #1c1b1b;
+            --inverse-on-surface: #313030;
+            --on-secondary: #670507;
+            --on-tertiary: #313030;
+            --on-error-container: #ffdad6;
+            --on-primary-container: #636565;
+            --secondary-container: #871f1b;
+            --surface-tint: #c6c6c7;
+            --on-error: #690005;
+            --on-primary-fixed: #1a1c1c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--on-surface);
+            cursor: default;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Premium Arabic Typography Overrides */
+        html[lang="ar"],
+        html[lang="ar"] body,
+        html[lang="ar"] input,
+        html[lang="ar"] button,
+        html[lang="ar"] select,
+        html[lang="ar"] textarea,
+        html[lang="ar"] .font-body-md {
+            font-family: 'Cairo', 'Inter', sans-serif !important;
+        }
+
+        html[lang="ar"] .font-display-xl,
+        html[lang="ar"] .font-headline-lg {
+            font-family: 'Cairo', sans-serif !important;
+            font-weight: 800;
+        }
+
+        html[lang="ar"] .font-code-sm {
+            font-family: 'Geist Mono', 'Cairo', monospace !important;
+        }
+
+        html[lang="ar"] .font-annotation {
+            font-family: 'Caveat', 'Cairo', cursive !important;
+        }
+
+        /* Fix Tailwind CDN JIT compiler bug for negative RTL arbitrary rotations */
+        html[dir="rtl"] .rtl\:-rotate-\[8deg\] {
+            --tw-rotate: -8deg !important;
+        }
+
+        html[dir="rtl"] .rtl\:-rotate-\[15deg\] {
+            --tw-rotate: -15deg !important;
+        }
+
+        .radial-cursor {
+            background: radial-gradient(600px circle at 50% 50%, var(--radial-cursor-color), transparent 40%);
+            transition: background 0.3s ease;
+        }
+
+        .doodle-path {
+            stroke: var(--accent-rust);
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dashed-card {
+            border: 1px dashed var(--card-border-color);
+            background-color: var(--card-bg);
+            transition: all 0.3s ease;
+        }
+
+        .dashed-card:hover {
+            border-style: solid;
+            border-color: var(--card-hover-border-color);
+            background-color: var(--card-hover-bg);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        a,
+        button,
+        h1,
+        h2,
+        h3,
+        p,
+        span,
+        li,
+        div {
+            transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="font-body-md text-on-surface selection:bg-accent-rust selection:text-white">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant">
+        <div class="flex justify-between items-center max-w-[1100px] mx-auto px-gutter py-4">
+            <a href="#"
+                class="font-display-xl text-headline-lg text-on-surface tracking-tighter hover:opacity-80 transition-opacity">
+                Ayman.
+            </a>
+            <div class="flex items-center gap-4 md:gap-8">
+                <div class="hidden md:flex gap-8 items-center font-code-sm text-code-sm uppercase tracking-wider">
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#about"
+                        data-i18n="nav_about">About</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#experience"
+                        data-i18n="nav_experience">Experience</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#projects"
+                        data-i18n="nav_work">Work</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#skills"
+                        data-i18n="nav_skills">Skills</a>
+                    <a class="text-on-surface-variant hover:text-primary transition-all duration-300" href="#contact"
+                        data-i18n="nav_contact">Contact</a>
+                    <a class="bg-primary text-on-primary px-4 py-1.5 rounded-lg font-bold scale-95 active:scale-90 transition-transform"
+                        href="https://drive.google.com/drive/folders/15y6VfSFbFkQASZsAXrDPphUsbluANp5c?usp=sharing" target="_blank" data-i18n="nav_resume">CV</a>
+                </div>
+
+                <!-- Language Toggle Button (Hidden but logic preserved) -->
+                <button id="lang-toggle"
+                    class="hidden text-on-surface-variant hover:text-primary transition-colors focus:outline-none px-2.5 py-1 rounded-lg border border-outline-variant hover:bg-surface-container transition-all items-center justify-center font-code-sm text-xs font-bold gap-1"
+                    title="Switch Language">
+                    <span class="material-symbols-outlined text-[18px] align-middle">language</span>
+                    <span id="lang-text">AR</span>
+                </button>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle"
+                    class="text-on-surface-variant hover:text-primary transition-colors focus:outline-none p-1.5 rounded-lg border border-outline-variant hover:bg-surface-container transition-all flex items-center justify-center"
+                    title="Toggle theme">
+                    <!-- Sun Icon (visible in dark mode) -->
+                    <span class="material-symbols-outlined hidden dark:block text-[20px] align-middle">light_mode</span>
+                    <!-- Moon Icon (visible in light mode) -->
+                    <span class="material-symbols-outlined block dark:hidden text-[20px] align-middle">dark_mode</span>
+                </button>
+
+                <button id="menu-btn"
+                    class="md:hidden text-primary focus:outline-none hover:text-accent-rust transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-background/95 backdrop-blur-lg z-50 md:hidden transition-all duration-300 transform translate-x-full flex flex-col justify-center items-center gap-8 font-code-sm text-xl uppercase tracking-wider">
+        <button id="close-menu"
+            class="absolute top-4 right-6 rtl:right-auto rtl:left-6 text-primary hover:text-accent-rust transition-colors focus:outline-none">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        <a class="mobile-link text-on-surface-variant hover:text-primary transition-all duration-300" href="#about"
+            data-i18n="nav_about">About</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary transition-all duration-300" href="#experience"
+            data-i18n="nav_experience">Experience</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary transition-all duration-300" href="#projects"
+            data-i18n="nav_work">Work</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary transition-all duration-300" href="#skills"
+            data-i18n="nav_skills">Skills</a>
+        <a class="mobile-link text-on-surface-variant hover:text-primary transition-all duration-300" href="#contact"
+            data-i18n="nav_contact">Contact</a>
+        <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold scale-95 active:scale-90 transition-transform"
+            href="https://drive.google.com/drive/folders/15y6VfSFbFkQASZsAXrDPphUsbluANp5c?usp=sharing" target="_blank" data-i18n="nav_resume">CV</a>
+    </div>
+    <!-- Global Radial Gradient -->
+    <div class="fixed inset-0 pointer-events-none radial-cursor z-0"></div>
+    <main class="relative z-10 max-w-[1100px] mx-auto px-gutter pt-32">
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center mb-section-gap">
+            <div class="md:col-span-5 relative group">
+                <div
+                    class="dashed-card aspect-square rounded-xl flex items-center justify-center overflow-hidden relative">
+                    <img alt="Ayman Ashraf"
+                        class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                        src="C:\Users\ahmad\Downloads\stitch_ibrahim_abouelezz_portfolio_website\WhatsApp Image 2026-05-17 at 12.04.06 PM (1).jpeg" />
+                    <div
+                        class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-surface-container">
+                        <img alt="Ayman Doodle" class="w-full h-full object-cover"
+                            src="C:\Users\ahmad\Downloads\stitch_ibrahim_abouelezz_portfolio_website\WhatsApp Image 2026-05-17 at 12.04.06 PM.jpeg" />
+                    </div>
+                </div>
+                <div
+                    class="absolute -top-4 -left-2 sm:-top-6 sm:-left-6 rtl:left-auto sm:rtl:-right-6 font-annotation text-annotation text-accent-rust -rotate-12 rtl:rotate-12">
+                    <span data-i18n="hero_doodle_me">"that's really me!"</span>
+                    <svg class="w-12 h-12 mt-1 rtl:scale-x-[-1]" viewbox="0 0 100 100">
+                        <path class="doodle-path" d="M10,90 Q50,10 90,90"></path>
+                    </svg>
+                </div>
+                <div class="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 rtl:right-auto sm:rtl:-left-4 font-annotation text-annotation text-accent-rust rotate-[8deg] rtl:-rotate-[8deg]"
+                    data-i18n="hero_doodle_roles">
+                    "open to roles!"
+                </div>
+            </div>
+            <div class="md:col-span-7">
+                <div class="font-code-sm text-accent-rust mb-4 uppercase tracking-widest flex items-center gap-2">
+                    <span class="w-8 h-[1px] bg-accent-rust"></span> <span data-i18n="hero_status">Available for
+                        work</span>
+                </div>
+                <h1
+                    class="font-display-xl text-display-xl-mobile md:text-display-xl tracking-tighter leading-none mb-6">
+                    <span data-i18n="hero_title_1">AYMAN</span> <br />
+                    <span class="relative">
+                        <span data-i18n="hero_title_2">ASHRAF</span>
+                        <svg class="absolute -bottom-2 rtl:bottom-1 left-0 rtl:left-auto rtl:right-0 w-full h-4 rtl:scale-x-[-1]"
+                            preserveaspectratio="none" viewbox="0 0 300 20">
+                            <path class="doodle-path" d="M5,15 Q150,5 295,15"></path>
+                        </svg>
+                    </span>
+                </h1>
+                <p class="font-code-sm text-headline-lg text-on-surface-variant mb-6" data-i18n="hero_subtitle">
+                    Content Lead &amp; Arabic Saudi Video Model
+                </p>
+                <p class="text-on-surface-variant text-lg mb-8 max-w-xl leading-relaxed" data-i18n="hero_desc">
+                    Dynamic and results-driven Content Specialist with over 5 years of experience in content creation,
+                    video production, and media leadership. Specializing in the Saudi dialect for premium GCC markets.
+                </p>
+                <div class="grid grid-cols-3 gap-4 sm:gap-6 mb-10">
+                    <div>
+                        <div class="font-code-sm text-primary text-xl font-bold" data-i18n="hero_stat1_num">1000+</div>
+                        <div class="font-code-sm text-on-tertiary-container text-xs uppercase"
+                            data-i18n="hero_stat1_txt">Videos Produced</div>
+                    </div>
+                    <div>
+                        <div class="font-code-sm text-primary text-xl font-bold" data-i18n="hero_stat2_num">1000+</div>
+                        <div class="font-code-sm text-on-tertiary-container text-xs uppercase"
+                            data-i18n="hero_stat2_txt">Voice Over</div>
+                    </div>
+                    <div>
+                        <div class="font-code-sm text-primary text-xl font-bold" data-i18n="hero_stat3_num">50+</div>
+                        <div class="font-code-sm text-on-tertiary-container text-xs uppercase"
+                            data-i18n="hero_stat3_txt">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-4 items-center">
+                    <a href="mailto:AymanAshraf747@gmail.com"
+                        class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity text-center"
+                        data-i18n="hero_btn_portfolio">
+                        Email Me
+                    </a>
+                    <a href="https://wa.me/201025165765"
+                        class="border border-outline-variant text-primary px-8 py-3 rounded-lg font-bold hover:bg-primary/5 transition-colors text-center"
+                        data-i18n="hero_btn_contact">
+                        WhatsApp Me
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="mb-section-gap" id="about">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="font-display-xl text-headline-lg relative">
+                    <span data-i18n="about_title">00. About</span>
+                    <svg class="absolute -bottom-1 left-0 w-full h-2" preserveaspectratio="none" viewbox="0 0 100 10">
+                        <path class="doodle-path" d="M0,8 Q50,2 100,8"></path>
+                    </svg>
+                </h2>
+                <div class="h-[1px] flex-grow bg-outline-variant"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-8 space-y-6 text-on-surface-variant text-lg">
+                    <p data-i18n="about_p1">
+                        I am a versatile <span class="text-primary font-medium">Content Lead</span> and <span
+                            class="text-primary font-medium">Arabic Video Model</span> specializing in the Saudi
+                        dialect. My expertise lies in bridging the gap between brand storytelling and audience
+                        engagement through high-impact visual content.
+                    </p>
+                    <p data-i18n="about_p2">
+                        Over the years, I've led creative teams to produce hundreds of high-quality videos for real
+                        estate, e-commerce, and corporate sectors. I don't just act; I <span
+                            class="text-accent-rust">architect content strategies</span> that drive measurable growth
+                        and brand recognition across the MENA region.
+                    </p>
+                    <p data-i18n="about_p3">
+                        Currently based in <span class="text-primary">Cairo, Egypt</span>, I operate with a global
+                        mindset, managing teams and projects for major UAE and Saudi firms while maintaining the highest
+                        standards of production and creative excellence.
+                    </p>
+                </div>
+                <div class="md:col-span-4">
+                    <div class="dashed-card p-6 rounded-xl relative">
+                        <div class="font-code-sm text-accent-rust mb-4 uppercase" data-i18n="about_facts_title">Quick
+                            Facts</div>
+                        <ul class="space-y-4 font-code-sm text-sm">
+                            <li class="flex justify-between border-b border-outline-variant/30 pb-2">
+                                <span class="text-on-tertiary-container" data-i18n="about_facts_loc_lbl">Location</span>
+                                <span data-i18n="about_facts_loc_val">Cairo, Egypt</span>
+                            </li>
+                            <li class="flex justify-between border-b border-outline-variant/30 pb-2">
+                                <span class="text-on-tertiary-container"
+                                    data-i18n="about_facts_exp_lbl">Experience</span>
+                                <span data-i18n="about_facts_exp_val">5+ Years</span>
+                            </li>
+                            <li class="flex justify-between border-b border-outline-variant/30 pb-2">
+                                <span class="text-on-tertiary-container"
+                                    data-i18n="about_facts_edu_lbl">Education</span>
+                                <span data-i18n="about_facts_edu_val">B. Accounting</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-on-tertiary-container"
+                                    data-i18n="about_facts_lang_lbl">Languages</span>
+                                <span data-i18n="about_facts_lang_val">AR (Saudi), EN</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 flex justify-center">
+                            <a class="text-accent-rust font-annotation text-xl hover:underline italic"
+                                href="https://drive.google.com/drive/folders/1E69fP0WMFtgbQudFEC9wGJmKvqjB5NXH?usp=sharing"
+                                target="_blank" data-i18n="about_reel_link">View
+                                Video Reel →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section class="mb-section-gap" id="experience">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="font-display-xl text-headline-lg relative">
+                    <span data-i18n="exp_title">01. Experience</span>
+                    <svg class="absolute -bottom-1 left-0 w-full h-2" preserveaspectratio="none" viewbox="0 0 100 10">
+                        <path class="doodle-path" d="M0,8 Q50,2 100,8"></path>
+                    </svg>
+                </h2>
+                <div class="h-[1px] flex-grow bg-outline-variant"></div>
+            </div>
+            <div class="space-y-12">
+                <!-- Card 1 -->
+                <div class="dashed-card p-card-padding rounded-xl relative group">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-8 gap-4">
+                        <div>
+                            <h3 class="font-display-xl text-2xl text-primary mb-1" data-i18n="exp_c1_title">
+                                Content Creation Team Lead <span class="font-annotation text-accent-rust ms-2">@
+                                    Azzrak</span>
+                            </h3>
+                            <div class="font-code-sm text-on-tertiary-container" data-i18n="exp_c1_date">May 2023 —
+                                Present</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 flex flex-wrap gap-2 md:gap-3 self-start md:self-center">
+                            <span
+                                class="px-3.5 py-1.5 bg-accent-rust/10 text-accent-rust border border-accent-rust/20 rounded-full font-code-sm text-xs flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:bg-accent-rust/20 cursor-default shadow-sm select-none">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-rust animate-pulse"></span>
+                                <span data-i18n="exp_c1_tag1">Leadership</span>
+                            </span>
+                            <span
+                                class="px-3.5 py-1.5 bg-primary/5 text-on-surface-variant border border-outline-variant rounded-full font-code-sm text-xs flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:bg-primary/10 cursor-default shadow-sm select-none">
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant/40"></span>
+                                <span data-i18n="exp_c1_tag2">Team Mgmt</span>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-on-surface-variant list-none ps-0">
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c1_b1">Supervising a team of 10+ professionals across scriptwriting,
+                                video editing, and
+                                graphic design.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c1_b2">Defining content strategies for real estate and business sectors
+                                to enhance digital
+                                engagement.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c1_b3">Conducting in-depth audience research to align content with
+                                brand objectives and
+                                market trends.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="dashed-card p-card-padding rounded-xl relative group">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-8 gap-4">
+                        <div>
+                            <h3 class="font-display-xl text-2xl text-primary mb-1" data-i18n="exp_c2_title">
+                                Voiceover &amp; Video Modeling <span class="font-annotation text-accent-rust ms-2">@
+                                    Freelance</span>
+                            </h3>
+                            <div class="font-code-sm text-on-tertiary-container" data-i18n="exp_c2_date">Aug 2022 —
+                                Present</div>
+                        </div>
+                        <div class="mt-2 md:mt-0 flex flex-wrap gap-2 md:gap-3 self-start md:self-center">
+                            <span
+                                class="px-3.5 py-1.5 bg-accent-rust/10 text-accent-rust border border-accent-rust/20 rounded-full font-code-sm text-xs flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:bg-accent-rust/20 cursor-default shadow-sm select-none">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-rust animate-pulse"></span>
+                                <span data-i18n="exp_c2_tag1">1000+ Videos</span>
+                            </span>
+                            <span
+                                class="px-3.5 py-1.5 bg-primary/5 text-on-surface-variant border border-outline-variant rounded-full font-code-sm text-xs flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:bg-primary/10 cursor-default shadow-sm select-none">
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant/40"></span>
+                                <span data-i18n="exp_c2_tag2">Saudi Dialect</span>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-on-surface-variant list-none ps-0">
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c2_b1">Produced and performed in 1000+ videos specializing in the Saudi
+                                dialect for premium
+                                brands.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c2_b2">Collaborated with prominent UAE clients including DAMAC Group,
+                                Deyaar Development, and
+                                High Mark Real Estate.</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="dashed-card p-card-padding rounded-xl relative group">
+                    <div class="flex flex-col md:flex-row justify-between md:items-center mb-8 gap-4">
+                        <div>
+                            <h3 class="font-display-xl text-2xl text-primary mb-1" data-i18n="exp_c3_title">
+                                Head of Content <span class="font-annotation text-accent-rust ms-2">@ Digital
+                                    House</span>
+                            </h3>
+                            <div class="font-code-sm text-on-tertiary-container" data-i18n="exp_c3_date">Apr 2025 — Oct
+                                2025 (Project-Based)
+                            </div>
+                        </div>
+                        <div class="mt-2 md:mt-0 flex flex-wrap gap-2 md:gap-3 self-start md:self-center">
+                            <span
+                                class="px-3.5 py-1.5 bg-accent-rust/10 text-accent-rust border border-accent-rust/20 rounded-full font-code-sm text-xs flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:bg-accent-rust/20 cursor-default shadow-sm select-none">
+                                <span class="w-1.5 h-1.5 rounded-full bg-accent-rust animate-pulse"></span>
+                                <span data-i18n="exp_c3_tag1">Strategy</span>
+                            </span>
+                            <span
+                                class="px-3.5 py-1.5 bg-primary/5 text-on-surface-variant border border-outline-variant rounded-full font-code-sm text-xs flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:bg-primary/10 cursor-default shadow-sm select-none">
+                                <span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant/40"></span>
+                                <span data-i18n="exp_c3_tag2">E-commerce</span>
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-on-surface-variant list-none ps-0">
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c3_b1">Spearheaded content initiatives for e-commerce, real estate, and
+                                healthcare
+                                clients.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-accent-rust text-sm mt-1">check_circle</span>
+                            <span data-i18n="exp_c3_b2">Oversaw video production from conceptualization to final
+                                publishing for maximum
+                                reach.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="mb-section-gap" id="projects">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="font-display-xl text-headline-lg relative">
+                    <span data-i18n="proj_title">02. Featured Campaigns</span>
+                    <svg class="absolute -bottom-1 left-0 w-full h-2" preserveaspectratio="none" viewbox="0 0 100 10">
+                        <path class="doodle-path" d="M0,8 Q50,2 100,8"></path>
+                    </svg>
+                </h2>
+                <div class="h-[1px] flex-grow bg-outline-variant"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="dashed-card p-card-padding rounded-xl relative flex flex-col group h-full">
+                    <div class="absolute -top-4 right-4 rtl:right-auto rtl:left-4 font-annotation text-accent-rust rotate-12 rtl:-rotate-12 bg-background px-2"
+                        data-i18n="proj_badge">
+                        shipped solo!
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-display-xl text-3xl text-primary" data-i18n="proj_c1_title">DAMAC Group</h3>
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">play_circle</span>
+                    </div>
+                    <div class="font-code-sm text-accent-rust text-sm mb-4" data-i18n="proj_c1_subtitle">Real Estate
+                        Showcase • 2023-24</div>
+                    <p class="text-on-surface-variant mb-6 flex-grow" data-i18n="proj_c1_desc">
+                        Led video modeling and Saudi dialect voiceover for high-end luxury property launches. Focused on
+                        reaching high-net-worth individuals in the GCC.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c1_tag1">Video
+                            Modeling</span>
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c1_tag2">Saudi
+                            Dialect</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="dashed-card p-card-padding rounded-xl relative flex flex-col group h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-display-xl text-3xl text-primary" data-i18n="proj_c2_title">Deyaar Development
+                        </h3>
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">play_circle</span>
+                    </div>
+                    <div class="font-code-sm text-accent-rust text-sm mb-4" data-i18n="proj_c2_subtitle">Property
+                        Portfolios • 2023</div>
+                    <p class="text-on-surface-variant mb-6 flex-grow" data-i18n="proj_c2_desc">
+                        Managed content production for comprehensive property portfolios, bridging the gap between
+                        developers and potential investors.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c2_tag1">Strategy</span>
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c2_tag2">Production</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="dashed-card p-card-padding rounded-xl relative flex flex-col group h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-display-xl text-3xl text-primary" data-i18n="proj_c3_title">High Mark Real
+                            Estate</h3>
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">play_circle</span>
+                    </div>
+                    <div class="font-code-sm text-accent-rust text-sm mb-4" data-i18n="proj_c3_subtitle">Sales Campaigns
+                        • 2024</div>
+                    <p class="text-on-surface-variant mb-6 flex-grow" data-i18n="proj_c3_desc">
+                        Developed and performed in video sales letters that resulted in a significant uptick in
+                        qualified lead generation for the UAE market.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c3_tag1">Sales
+                            Content</span>
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c3_tag2">Performance</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="dashed-card p-card-padding rounded-xl relative flex flex-col group h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="font-display-xl text-3xl text-primary" data-i18n="proj_c4_title">Azzrak Marketplace
+                        </h3>
+                        <span
+                            class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">play_circle</span>
+                    </div>
+                    <div class="font-code-sm text-accent-rust text-sm mb-4" data-i18n="proj_c4_subtitle">Platform
+                        Content • 2023</div>
+                    <p class="text-on-surface-variant mb-6 flex-grow" data-i18n="proj_c4_desc">
+                        Coordinated a team to produce high-volume marketplace content, maintaining brand consistency
+                        across 100+ weekly assets.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c4_tag1">Leadership</span>
+                        <span class="font-code-sm text-[10px] uppercase bg-surface-container-highest px-2 py-1 rounded"
+                            data-i18n="proj_c4_tag2">Design Ops</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="mb-section-gap" id="skills">
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="font-display-xl text-headline-lg relative">
+                    <span data-i18n="skills_title">03. Skills</span>
+                    <svg class="absolute -bottom-1 left-0 w-full h-2" preserveaspectratio="none" viewbox="0 0 100 10">
+                        <path class="doodle-path" d="M0,8 Q50,2 100,8"></path>
+                    </svg>
+                </h2>
+                <div class="h-[1px] flex-grow bg-outline-variant"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="dashed-card p-6 rounded-xl">
+                    <div class="font-code-sm text-accent-rust mb-4 uppercase text-xs" data-i18n="skills_col1_title">
+                        Content &amp; SEO</div>
+                    <div class="flex flex-col gap-2 font-code-sm text-sm">
+                        <span data-i18n="skills_col1_s1">Creative Writing</span>
+                        <span data-i18n="skills_col1_s2">Content Strategy</span>
+                        <span data-i18n="skills_col1_s3">Content Planning</span>
+                        <span data-i18n="skills_col1_s4">SEO Optimization</span>
+                    </div>
+                </div>
+                <div class="dashed-card p-6 rounded-xl">
+                    <div class="font-code-sm text-accent-rust mb-4 uppercase text-xs" data-i18n="skills_col2_title">
+                        Creative &amp; Media</div>
+                    <div class="flex flex-col gap-2 font-code-sm text-sm">
+                        <span data-i18n="skills_col2_s1">Video Modeling</span>
+                        <span data-i18n="skills_col2_s2">Script Writing</span>
+                        <span data-i18n="skills_col2_s3">Voiceover Artist</span>
+                        <span data-i18n="skills_col2_s4">Content Research</span>
+                    </div>
+                </div>
+                <div class="dashed-card p-6 rounded-xl">
+                    <div class="font-code-sm text-accent-rust mb-4 uppercase text-xs" data-i18n="skills_col3_title">
+                        Leadership</div>
+                    <div class="flex flex-col gap-2 font-code-sm text-sm">
+                        <span data-i18n="skills_col3_s1">Team Management</span>
+                        <span data-i18n="skills_col3_s2">Project Supervision</span>
+                        <span data-i18n="skills_col3_s3">Workflow Optimization</span>
+                        <span data-i18n="skills_col3_s4">Brand Alignment</span>
+                    </div>
+                </div>
+                <div class="dashed-card p-6 rounded-xl">
+                    <div class="font-code-sm text-accent-rust mb-4 uppercase text-xs" data-i18n="skills_col4_title">
+                        Tools</div>
+                    <div class="flex flex-col gap-2 font-code-sm text-sm">
+                        <span data-i18n="skills_col4_s1">CapCut / Premiere</span>
+                        <span data-i18n="skills_col4_s2">Notion / Trello</span>
+                        <span data-i18n="skills_col4_s3">Social Analytics</span>
+                        <span data-i18n="skills_col4_s4">AI Content Tools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="mb-section-gap text-center relative py-20" id="contact">
+            <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+                <span class="font-display-xl text-[20vw] tracking-tighter opacity-10"
+                    data-i18n="contact_salam">SALAM.</span>
+            </div>
+            <div class="relative z-10">
+                <div class="flex items-center justify-center gap-4 mb-12">
+                    <div class="h-[1px] w-24 bg-outline-variant"></div>
+                    <h2 class="font-display-xl text-headline-lg relative inline-block">
+                        <span data-i18n="contact_title">04. Get In Touch</span>
+                        <svg class="absolute -bottom-1 left-0 w-full h-2" preserveaspectratio="none"
+                            viewbox="0 0 100 10">
+                            <path class="doodle-path" d="M0,8 Q50,2 100,8"></path>
+                        </svg>
+                    </h2>
+                    <div class="h-[1px] w-24 bg-outline-variant"></div>
+                </div>
+                <p class="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto" data-i18n="contact_desc">
+                    Looking for a compelling face for your brand or a lead to drive your content strategy? My inbox is
+                    always open for collaborations.
+                </p>
+                <div class="relative inline-block group">
+                    <a class="inline-flex items-center gap-4 bg-primary text-on-primary font-display-xl text-3xl px-12 py-6 rounded-xl hover:scale-[1.02] transition-transform active:scale-95"
+                        href="mailto:AymanAshraf747@gmail.com">
+                        <span data-i18n="contact_btn">Say Hello</span>
+                        <span class="material-symbols-outlined text-4xl">alternate_email</span>
+                    </a>
+                    <div
+                        class="absolute -top-10 -right-4 sm:-right-16 rtl:right-auto sm:rtl:-left-16 font-annotation text-3xl text-accent-rust rotate-[15deg] rtl:-rotate-[15deg]">
+                        <span data-i18n="contact_doodle">do it!</span>
+                        <svg class="w-12 h-12 ms-4 rtl:scale-x-[-1] -mt-2" viewbox="0 0 100 100">
+                            <path class="doodle-path" d="M90,10 Q80,50 20,90"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-12 font-code-sm text-on-surface-variant">
+                    <p data-i18n="contact_num">+20 102 516 5765</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="w-full py-section-gap border-t border-dashed border-outline-variant mt-20">
+            <div class="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="font-code-sm text-code-sm text-primary mb-2" data-i18n="footer_name">Ayman Ashraf Abd
+                        Alrahman</div>
+                    <div class="font-body-md text-body-md text-on-tertiary-container" data-i18n="footer_copyright">
+                        © 2026 Built with meticulous craft by Ayman Ashraf
+                    </div>
+                </div>
+                <div class="flex items-center gap-8 font-body-md text-body-md">
+                    <a class="text-on-tertiary-container hover:text-primary underline decoration-accent-rust underline-offset-4 transition-opacity"
+                        href="https://www.instagram.com/ayman_ashraf99?igsh=MXBlcHQwZnR3bTFtNw==" target="_blank" data-i18n="footer_insta">Instagram</a>
+                    <a class="text-on-tertiary-container hover:text-primary underline decoration-accent-rust underline-offset-4 transition-opacity"
+                        href="https://www.facebook.com/share/1DpLGdqSrC/" target="_blank" data-i18n="footer_facebook">Facebook</a>
+                    <a class="text-on-tertiary-container hover:text-primary underline decoration-accent-rust underline-offset-4 transition-opacity"
+                        href="https://www.linkedin.com/in/ayman-ashraf747?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" data-i18n="footer_linkdin">LinkedIn</a>
+                </div>
+                <div class="font-code-sm text-xs text-on-tertiary-container flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">location_on</span>
+                    <span data-i18n="footer_loc">Cairo, Egypt</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // Mouse follow interactive gradient
+        const radial = document.querySelector('.radial-cursor');
+        document.addEventListener('mousemove', (e) => {
+            radial.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, var(--radial-cursor-color), transparent 40%)`;
+        });
+
+        // Mobile navigation drawer toggle logic
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function openMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', openMenu);
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        function toggleTheme() {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', toggleTheme);
+        }
+
+        // --- Premium Dual-Language (AR/EN) Translation System ---
+        const translations = {
+            en: {
+                nav_about: "About",
+                nav_experience: "Experience",
+                nav_work: "Work",
+                nav_skills: "Skills",
+                nav_contact: "Contact",
+                nav_resume: "CV",
+                hero_doodle_me: '"that\'s really me!"',
+                hero_doodle_roles: '"open to roles!"',
+                hero_status: "Available for work",
+                hero_title_1: "AYMAN",
+                hero_title_2: "ASHRAF",
+                hero_subtitle: "Content Lead & Arabic Saudi Video Model",
+                hero_desc: "Dynamic and results-driven Content Specialist with over 5 years of experience in content creation, video production, and media leadership. Specializing in the Saudi dialect for premium GCC markets.",
+                hero_stat1_num: "1000+",
+                hero_stat1_txt: "Videos Produced",
+                hero_stat2_num: "1000+",
+                hero_stat2_txt: "Voice Over",
+                hero_stat3_num: "50+",
+                hero_stat3_txt: "Happy Clients",
+                hero_btn_portfolio: "Email Me",
+                hero_btn_contact: "WhatsApp Me",
+                about_title: "00. About",
+                about_p1: 'I am a versatile <span class="text-primary font-medium">Content Lead</span> and <span class="text-primary font-medium">Arabic Video Model</span> specializing in the Saudi dialect. My expertise lies in bridging the gap between brand storytelling and audience engagement through high-impact visual content.',
+                about_p2: 'Over the years, I\'ve led creative teams to produce hundreds of high-quality videos for real estate, e-commerce, and corporate sectors. I don\'t just act; I <span class="text-accent-rust">architect content strategies</span> that drive measurable growth and brand recognition across the MENA region.',
+                about_p3: 'Currently based in <span class="text-primary">Cairo, Egypt</span>, I operate with a global mindset, managing teams and projects for major UAE and Saudi firms while maintaining the highest standards of production and creative excellence.',
+                about_facts_title: "Quick Facts",
+                about_facts_loc_lbl: "Location",
+                about_facts_loc_val: "Cairo, Egypt",
+                about_facts_exp_lbl: "Experience",
+                about_facts_exp_val: "5+ Years",
+                about_facts_edu_lbl: "Education",
+                about_facts_edu_val: "B. Accounting",
+                about_facts_lang_lbl: "Languages",
+                about_facts_lang_val: "AR (Saudi), EN",
+                about_reel_link: "View Video Reel →",
+                exp_title: "01. Experience",
+                exp_c1_title: 'Content Creation Team Lead <span class="font-annotation text-accent-rust ml-2">@ Azzrak</span>',
+                exp_c1_date: "May 2023 — Present",
+                exp_c1_tag1: "Leadership",
+                exp_c1_tag2: "Team Mgmt",
+                exp_c1_b1: "Supervising a team of 10+ professionals across scriptwriting, video editing, and graphic design.",
+                exp_c1_b2: "Defining content strategies for real estate and business sectors to enhance digital engagement.",
+                exp_c1_b3: "Conducting in-depth audience research to align content with brand objectives and market trends.",
+                exp_c2_title: 'Voiceover & Video Modeling <span class="font-annotation text-accent-rust ml-2">@ Freelance</span>',
+                exp_c2_date: "Aug 2022 — Present",
+                exp_c2_tag1: "1000+ Videos",
+                exp_c2_tag2: "Saudi Dialect",
+                exp_c2_b1: "Produced and performed in 1000+ videos specializing in the Saudi dialect for premium brands.",
+                exp_c2_b2: "Collaborated with prominent UAE clients including DAMAC Group, Deyaar Development, and High Mark Real Estate.",
+                exp_c3_title: 'Head of Content <span class="font-annotation text-accent-rust ml-2">@ Digital House</span>',
+                exp_c3_date: "Apr 2025 — Oct 2025 (Project-Based)",
+                exp_c3_tag1: "Strategy",
+                exp_c3_tag2: "E-commerce",
+                exp_c3_b1: "Spearheaded content initiatives for e-commerce, real estate, and healthcare clients.",
+                exp_c3_b2: "Oversaw video production from conceptualization to final publishing for maximum reach.",
+                proj_title: "02. Featured Campaigns",
+                proj_badge: "shipped solo!",
+                proj_c1_title: "DAMAC Group",
+                proj_c1_subtitle: "Real Estate Showcase • 2023-24",
+                proj_c1_desc: "Led video modeling and Saudi dialect voiceover for high-end luxury property launches. Focused on reaching high-net-worth individuals in the GCC.",
+                proj_c1_tag1: "Video Modeling",
+                proj_c1_tag2: "Saudi Dialect",
+                proj_c2_title: "Deyaar Development",
+                proj_c2_subtitle: "Property Portfolios • 2023",
+                proj_c2_desc: "Managed content production for comprehensive property portfolios, bridging the gap between developers and potential investors.",
+                proj_c2_tag1: "Strategy",
+                proj_c2_tag2: "Production",
+                proj_c3_title: "High Mark Real Estate",
+                proj_c3_subtitle: "Sales Campaigns • 2024",
+                proj_c3_desc: "Developed and performed in video sales letters that resulted in a significant uptick in qualified lead generation for the UAE market.",
+                proj_c3_tag1: "Sales Content",
+                proj_c3_tag2: "Performance",
+                proj_c4_title: "Azzrak Agency",
+                proj_c4_subtitle: "Platform Content • 2023",
+                proj_c4_desc: "Coordinated a team to produce high-volume marketplace content, maintaining brand consistency across 100+ weekly assets.",
+                proj_c4_tag1: "Leadership",
+                proj_c4_tag2: "Design Ops",
+                skills_title: "03. Skills",
+                skills_col1_title: "Content & SEO",
+                skills_col1_s1: "Creative Writing",
+                skills_col1_s2: "Content Strategy",
+                skills_col1_s3: "Content Planning",
+                skills_col1_s4: "SEO Optimization",
+                skills_col2_title: "Creative & Media",
+                skills_col2_s1: "Video Modeling",
+                skills_col2_s2: "Script Writing",
+                skills_col2_s3: "Voiceover Artist",
+                skills_col2_s4: "Content Research",
+                skills_col3_title: "Leadership",
+                skills_col3_s1: "Team Management",
+                skills_col3_s2: "Project Supervision",
+                skills_col3_s3: "Workflow Optimization",
+                skills_col3_s4: "Brand Alignment",
+                skills_col4_title: "Tools",
+                skills_col4_s1: "CapCut / Premiere",
+                skills_col4_s2: "Notion / Trello",
+                skills_col4_s3: "Social Analytics",
+                skills_col4_s4: "AI Content Tools",
+                contact_salam: "SALAM.",
+                contact_title: "04. Get In Touch",
+                contact_desc: "Looking for a compelling face for your brand or a lead to drive your content strategy? My inbox is always open for collaborations.",
+                contact_btn: "Say Hello",
+                contact_doodle: "do it!",
+                contact_num: "+20 102 516 5765",
+                footer_name: "Ayman Ashraf Abd Alrahman",
+                footer_copyright: "© 2026 Built with meticulous craft by Ayman Ashraf",
+                footer_insta: "Instagram",
+                footer_facebook: "Facebook",
+                footer_linkdin: "LinkedIn",
+                footer_loc: "Cairo, Egypt"
+            },
+            ar: {
+                nav_about: "من أنا",
+                nav_experience: "الخبرات",
+                nav_work: "أعمالي",
+                nav_skills: "المهارات",
+                nav_contact: "اتصل بي",
+                nav_resume: "السيرة الذاتية",
+                hero_doodle_me: '"هذا أنا حقاً!"',
+                hero_doodle_roles: '"مستعد للعمل!"',
+                hero_status: "متاح للعمل",
+                hero_title_1: "أيمن",
+                hero_title_2: "أشرف",
+                hero_subtitle: "قائد صناعة المحتوى وعارض فيديو باللهجة السعودية",
+                hero_desc: "أخصائي محتوى ديناميكي وموجه بالنتائج مع أكثر من 5 سنوات من الخبرة في إنشاء المحتوى، وإنتاج الفيديو، والقيادة الإعلامية. متخصص في اللهجة السعودية لأسواق الخليج العربي المتميزة.",
+                hero_stat1_num: "1000+",
+                hero_stat1_txt: "فيديو منتج",
+                hero_stat2_num: "1000+",
+                hero_stat2_txt: "تعليق صوتي",
+                hero_stat3_num: "50+",
+                hero_stat3_txt: "عميل سعيد",
+                hero_btn_portfolio: "تواصل عبر البريد",
+                hero_btn_contact: "تواصل عبر واتساب",
+                about_title: "00. من أنا",
+                about_p1: 'أنا قائد محتوى وعارض فيديو عربي متعدد المهام متخصص في اللهجة السعودية. تكمن خبرتي في سد الفجوة بين سرد قصة العلامة التجارية وتفاعل الجمهور من خلال محتوى مرئي عالي التأثير.',
+                about_p2: 'على مر السنين، قدت فرقًا إبداعية لإنتاج مئات الفيديوهات عالية الجودة لقطاعات العقارات والتجارة الإلكترونية والشركات. أنا لا أمثل فقط؛ بل أبتكر استراتيجيات محتوى تحقق نموًا ملموسًا وانتشارًا واسعًا للعلامات التجارية في منطقة الشرق الأوسط وشمال أفريقيا.',
+                about_p3: 'مستقر حاليًا في القاهرة، مصر، وأعمل بعقلية عالمية، حيث أدير فرقًا ومشاريع لشركات كبرى في الإمارات والسعودية مع الحفاظ على أعلى معايير الإنتاج والتميز الإبداعي.',
+                about_facts_title: "حقائق سريعة",
+                about_facts_loc_lbl: "الموقع",
+                about_facts_loc_val: "القاهرة، مصر",
+                about_facts_exp_lbl: "الخبرة",
+                about_facts_exp_val: "5+ سنوات",
+                about_facts_edu_lbl: "التعليم",
+                about_facts_edu_val: "بكالوريوس محاسبة",
+                about_facts_lang_lbl: "اللغات",
+                about_facts_lang_val: "العربية (السعودية)، الإنجليزية",
+                about_reel_link: "عرض فيديو استعراضي ←",
+                exp_title: "01. الخبرات المهنية",
+                exp_c1_title: 'قائد فريق صناعة المحتوى <span class="font-annotation text-accent-rust ml-2">@ الأزرق</span>',
+                exp_c1_date: "مايو 2023 — الحالي",
+                exp_c1_tag1: "قيادة",
+                exp_c1_tag2: "إدارة فرق",
+                exp_c1_b1: "الإشراف على فريق يضم أكثر من 10 متخصصين في كتابة السيناريو وتحرير الفيديو والتصميم الجرافيكي.",
+                exp_c1_b2: "تحديد استراتيجيات المحتوى لقطاعات العقارات والأعمال لتعزيز التفاعل الرقمي.",
+                exp_c1_b3: "إجراء أبحاث متعمقة حول الجمهور لمواءمة المحتوى مع أهداف العلامة التجارية واتجاهات السوق.",
+                exp_c2_title: 'التعليق الصوتي وعارض الفيديو <span class="font-annotation text-accent-rust ml-2">@ عمل حر</span>',
+                exp_c2_date: "أغسطس 2022 — الحالي",
+                exp_c2_tag1: "1000+ فيديو",
+                exp_c2_tag2: "لهجة سعودية",
+                exp_c2_b1: "إنتاج وتأدية أكثر من 1000 فيديو متخصص باللهجة السعودية للعلامات التجارية الراقية.",
+                exp_c2_b2: "التعاون مع عملاء بارزين في الإمارات بما في ذلك مجموعة داماك، وديار للتطوير، وهاي مارك العقارية.",
+                exp_c3_title: 'رئيس قسم المحتوى <span class="font-annotation text-accent-rust ml-2">@ ديجيتال هاوس</span>',
+                exp_c3_date: "أبريل 2025 — أكتوبر 2025 (مبني على المشاريع)",
+                exp_c3_tag1: "استراتيجية",
+                exp_c3_tag2: "تجارة إلكترونية",
+                exp_c3_b1: "قيادة مبادرات المحتوى لعملاء التجارة الإلكترونية والعقارات والرعاية الصحية.",
+                exp_c3_b2: "الإشراف على إنتاج الفيديو بدءًا من الفكرة وحتى النشر النهائي لتحقيق أقصى درجات الوصول.",
+                proj_title: "02. الحملات الإعلانية المميزة",
+                proj_badge: "عمل فردي!",
+                proj_c1_title: "مجموعة داماك",
+                proj_c1_subtitle: "استعراض العقارات • 2023-24",
+                proj_c1_desc: "قيادة عرض الفيديو والتعليق الصوتي باللهجة السعودية لإطلاق العقارات الفاخرة الراقية. التركيز على الوصول إلى الأفراد ذوي الملاءة المالية العالية في مجلس التعاون الخليجي.",
+                proj_c1_tag1: "تقديم الفيديو",
+                proj_c1_tag2: "اللهجة السعودية",
+                proj_c2_title: "ديار للتطوير",
+                proj_c2_subtitle: "محافظ العقارات • 2023",
+                proj_c2_desc: "إدارة إنتاج المحتوى لمحافظ العقارات الشاملة، وسد الفجوة بين المطورين والمستثمرين المحتملين.",
+                proj_c2_tag1: "استراتيجية",
+                proj_c2_tag2: "إنتاج",
+                proj_c3_title: "هاي مارك العقارية",
+                proj_c3_subtitle: "الحملات البيعية • 2024",
+                proj_c3_desc: "تطوير والأداء في خطابات المبيعات المصورة التي أدت إلى زيادة ملحوظة في توليد العملاء المحتملين المؤهلين لسوق الإمارات.",
+                proj_c3_tag1: "محتوى المبيعات",
+                proj_c3_tag2: "الأداء",
+                proj_c4_title: "سوق الأزرق",
+                proj_c4_subtitle: "محتوى المنصة • 2023",
+                proj_c4_desc: "تنسيق فريق عمل لإنتاج محتوى عالي الحجم للمنصة التجارية، مع الحفاظ على اتساق العلامة التجارية عبر أكثر من 100 أصل أسبوعي.",
+                proj_c4_tag1: "قيادة",
+                proj_c4_tag2: "عمليات التصميم",
+                skills_title: "03. المهارات",
+                skills_col1_title: "المحتوى والسيو",
+                skills_col1_s1: "كتابة إبداعية",
+                skills_col1_s2: "استراتيجية المحتوى",
+                skills_col1_s3: "تخطيط المحتوى",
+                skills_col1_s4: "تحسين محركات البحث",
+                skills_col2_title: "الإعلام والإبداع",
+                skills_col2_s1: "تقديم الفيديوهات",
+                skills_col2_s2: "كتابة السيناريو",
+                skills_col2_s3: "التعليق الصوتي",
+                skills_col2_s4: "أبحاث المحتوى",
+                skills_col3_title: "القيادة والإدارة",
+                skills_col3_s1: "إدارة الفرق",
+                skills_col3_s2: "الإشراف على المشاريع",
+                skills_col3_s3: "تحسين سير العمل",
+                skills_col3_s4: "مواءمة العلامة التجارية",
+                skills_col4_title: "الأدوات",
+                skills_col4_s1: "كاب كات / بريمير",
+                skills_col4_s2: "نوشن / تريلو",
+                skills_col4_s3: "تحليلات التواصل",
+                skills_col4_s4: "أدوات الذكاء الاصطناعي",
+                contact_salam: "سَلام.",
+                contact_title: "04. تواصل معي",
+                contact_desc: "تبحث عن وجه مقنع لعلامتك التجارية أو قائد يقود استراتيجية المحتوى الخاصة بك؟ صندوق بريدي مفتوح دائمًا للتعاون.",
+                contact_btn: "ألقِ التحية",
+                contact_doodle: "افعلها!",
+                contact_num: "+20 102 516 5765",
+                footer_name: "أيمن أشرف عبد الرحمن",
+                footer_copyright: "© 2026 تم بناؤه بحرفية دقيقة بواسطة أيمن أشرف",
+                footer_insta: "إنستغرام",
+                footer_facebook: "فيسبوك",
+                footer_linkdin: "لينكد إن",
+                footer_loc: "القاهرة، مصر"
+            }
+        };
+
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langText = document.getElementById('lang-text');
+
+        function updateLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            localStorage.setItem('lang', lang);
+            if (langText) langText.textContent = lang === 'ar' ? 'EN' : 'AR';
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+        }
+
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const targetLang = currentLang === 'ar' ? 'en' : 'ar';
+            updateLanguage(targetLang);
+        }
+
+        if (langToggleBtn) {
+            langToggleBtn.addEventListener('click', toggleLanguage);
+        }
+
+        const savedLang = 'en';
+        updateLanguage(savedLang);
+    </script>
+</body>
+
+</html>
